@@ -70,8 +70,8 @@ class Game {
 
             x = point.x;
             y = point.y;
-            
-        } while (this.playerPointLocations.filter(point => point.locationX === x && point.locationY === y).length > 0);
+
+        } while (this.playerPointLocations.filter(point => point.x === x && point.y === y).length > 0);
 
         return new Fruit(x, y);
     }
